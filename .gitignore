@@ -2,3 +2,4 @@
 .vcode
 venv
 settings.json
+launch.json
