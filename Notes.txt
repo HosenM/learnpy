@@ -1,0 +1,21 @@
+#Beautiful Soup
+Access tag name with (.name)
+Access tag atteributes with (.attrs)
+Access text inside of tag (.string)
+
+.children > get all childs of a tag
+.parent > get all parents on a tag and childs themself
+
+soup.find_all(['h1', 'a', 'p'])
+soup.find_all(re.compile("h[1-9]")) #regix
+
+soup.find_all(attrs={'class':'banner'})
+soup.find_all(attrs={'class':'banner', 'id':'jumbotron'}) #multi attrs
+
+soup.select(".recipeLink") > get all tags with 'recipeLink' class
+soup.select("#selected") > get all tags with 'recipeLink' id
+soup.select(".recipeLink > a") > get a with class 'recipeLink'
+
+
+
+
